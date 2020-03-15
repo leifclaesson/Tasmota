@@ -187,6 +187,8 @@ char web_log[WEB_LOG_SIZE] = {'\0'};        // Web log buffer
  * Main
 \*********************************************************************************************/
 
+void LeifRun(); //LC
+
 void setup(void)
 {
   global_state.data = 3;  // Init global state (wifi_down, mqtt_down) to solve possible network issues
@@ -362,6 +364,8 @@ void loop(void)
     PerformEverySecond();
     XdrvCall(FUNC_EVERY_SECOND);
     XsnsCall(FUNC_EVERY_SECOND);
+
+	LeifRun(); //LC
   }
 
   if (!serial_local) { SerialInput(); }

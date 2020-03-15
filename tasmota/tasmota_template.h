@@ -1606,6 +1606,27 @@ const mytmplt kModules[MAXMODULE] PROGMEM = {
      GPIO_LED1_INV,    // GPIO13 Blue Led (0 = On, 1 = Off) - Link and Power status
      0, 0, 0, 0
   },
+  { "Zemismart",     //LC
+     0,        // GPIO00 D3 Wemos Button Shield
+     0,        // GPIO01 TX Serial RXD
+     0,        // GPIO02 D4 Wemos DHT Shield
+     0,        // GPIO03 RX Serial TXD and Optional sensor
+     GPIO_PWM1,        // GPIO04 D2 Wemos I2C SDA
+     GPIO_PWM4,        // GPIO05 D1 Wemos I2C SCL / Wemos Relay Shield (0 = Off, 1 = On) / Wemos WS2812B RGB led Shield
+                       // GPIO06 (SD_CLK   Flash)
+                       // GPIO07 (SD_DATA0 Flash QIO/DIO/DOUT)
+                       // GPIO08 (SD_DATA1 Flash QIO/DIO/DOUT)
+     0,        // GPIO09 (SD_DATA2 Flash QIO or ESP8285)
+     0,        // GPIO10 (SD_DATA3 Flash QIO or ESP8285)
+                       // GPIO11 (SD_CMD   Flash)
+     GPIO_PWM2,        // GPIO12 D6
+     GPIO_PWM5,        // GPIO13 D7
+     GPIO_PWM3,        // GPIO14 D5
+     0,        // GPIO15 D8
+     0,        // GPIO16 D0 Wemos Wake
+     0         // ADC0 A0 Analog input
+  }
+  /*
   { "Arilux LC06",     // ARILUX_LC06 - Arilux AL-LC06 (ESP8285)
                        // https://www.banggood.com/ARILUX-AL-LC06-LED-WIFI-Smartphone-Controller-Romote-5-Channels-DC12-24V-For-RGBWW-Strip-light-p-1061476.html
      GPIO_KEY1,        // GPIO00 Optional Button
@@ -1625,7 +1646,7 @@ const mytmplt kModules[MAXMODULE] PROGMEM = {
      GPIO_PWM1,        // GPIO14 RGB LED Red
      GPIO_USER,        // GPIO15 RGBW LED White
      0, 0
-  },
+  }*/,
   { "Sonoff S31",      // SONOFF_S31 - Sonoff S31 (ESP8266 - CSE7766)
      GPIO_KEY1,        // GPIO00 Button
      GPIO_CSE7766_TX,  // GPIO01 Serial RXD 4800 baud 8E1 CSE7766 energy sensor

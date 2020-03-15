@@ -1129,6 +1129,12 @@ public:
 LightStateClass light_state = LightStateClass();
 LightControllerClass light_controller = LightControllerClass(light_state);
 
+void LightChangeChannels(uint8_t *channels) //LC
+{
+	light_controller.changeChannels(channels);
+}
+
+
 /*********************************************************************************************\
  * Change scales from 8 bits to 10 bits and vice versa
 \*********************************************************************************************/

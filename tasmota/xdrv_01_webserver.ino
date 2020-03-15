@@ -81,7 +81,7 @@ const char HTTP_HEADER[] PROGMEM =
 #endif
 
 const char HTTP_SCRIPT_COUNTER[] PROGMEM =
-  "var cn=180;"                           // seconds
+  "var cn=86400;"                           // seconds	// default 180 //LC
   "function u(){"
     "if(cn>=0){"
       "eb('t').innerHTML='" D_RESTART_IN " '+cn+' " D_SECONDS "';"
